@@ -4,7 +4,7 @@
 
 # Ruby Object Orientation Fundamentals
 
-?: A class like a blueprint that defines how to build an object.
+?: A class is like a blueprint that defines how to build an object.
 
 (X) True ( ) False
 
@@ -35,13 +35,15 @@ end
 
 ```ruby
 class Pet
-  def initialize
+  def initialize(name)
     @name = name
   end
 end
+
+dog = Pet.new("Harpo")
 ```
 
-`Pet.new` in this example will instantiate a new instance of the `Pet` class?
+In the example above, `Pet.new("Harpo")` will instantiate a new instance of the `Pet` class.
 
 (X) True ( ) False
 
@@ -61,6 +63,8 @@ class Pet
     @name
   end
 end
+
+dog = Pet.new
 ```
 
 `Pet.new` in this example will instantiate a new instance of the `Pet` class?
@@ -86,6 +90,7 @@ end
 
 ```ruby
 rabbit = Pet.new("Jabby")
+rabbit.name
 ```
 
 `rabbit.name` in this example will output `Jabby`.
@@ -107,6 +112,7 @@ end
 
 ```ruby
 rabbit = Pet.new("Jabby")
+rabbit.name("Chokola")
 ```
 
 What will `rabbit.name("Chokola")` in this example return?
@@ -132,9 +138,10 @@ end
 
 ```ruby
 rabbit = Pet.new("Jabby")
+rabbit.name = "Chokola
 ```
 
-What will `rabbit.name("Chokola")` in this example return?
+In the example above, What will `rabbit.name = "Chokola"` return?
 (X) Chokola ( ) Jabby ( ) ArgumentError ( ) None of the Above
 
 ?: A macro in Ruby is code that returns more Ruby code.
@@ -158,7 +165,7 @@ end
 
 ```ruby
 buddy = Pet.new("Buddy")
-buddy.name("Chappie")
+buddy.name = "Chappie"
 ```
 
 What will `buddy.name` in this example output?
