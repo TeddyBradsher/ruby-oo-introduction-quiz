@@ -184,7 +184,7 @@ end
 buddy = Pet.new("Buddy")
 ```
 
-What will `buddy.name` in this example output?
+?: What will `buddy.name` in this example output?
 
 (X) Buddy ( ) Chappie ( ) ArgumentError ( ) None of the Above
 
