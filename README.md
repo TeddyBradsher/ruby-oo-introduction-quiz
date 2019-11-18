@@ -168,7 +168,7 @@ buddy = Pet.new("Buddy")
 buddy.name = "Chappie"
 ```
 
-What will `buddy.name` in this example output?
+Considering the code above, what will `buddy.name` output?
 
 ( ) Buddy (X) Chappie ( ) ArgumentError ( ) None of the Above
 
