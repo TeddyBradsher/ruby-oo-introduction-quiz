@@ -67,7 +67,8 @@ end
 dog = Pet.new
 ```
 
-`Pet.new` in this example will instantiate a new instance of the `Pet` class?
+`Pet.new` in this example will instantiate a new instance of the `Pet` class.
+
 ( ) True (X) False
 
 ?: 
@@ -94,6 +95,7 @@ rabbit.name
 ```
 
 `rabbit.name` in this example will output `Jabby`.
+
 (X) True ( ) False
 
 ?: 
@@ -116,6 +118,7 @@ rabbit.name("Chokola")
 ```
 
 What will `rabbit.name("Chokola")` in this example return?
+
 ( ) Chokola ( ) Jabby (X) ArgumentError ( ) None of the Above
 
 ?:
@@ -138,13 +141,14 @@ end
 
 ```ruby
 rabbit = Pet.new("Jabby")
-rabbit.name = "Chokola
+rabbit.name = "Chokola"
 ```
 
-In the example above, What will `rabbit.name = "Chokola"` return?
+In the example above, what will `rabbit.name = "Chokola"` return?
+
 (X) Chokola ( ) Jabby ( ) ArgumentError ( ) None of the Above
 
-?: A macro in Ruby is code that returns more Ruby code.
+?: A macro in Ruby is code that, in effect, writes more Ruby code.
 
 (X) True ( ) False
 
@@ -156,10 +160,8 @@ In the example above, What will `rabbit.name = "Chokola"` return?
 
 ```ruby
 class Pet
-
   attr_reader :name
   attr_writer :name
-
 end
 ```
 
@@ -170,15 +172,17 @@ buddy.name = "Chappie"
 
 Considering the code above, what will `buddy.name` output?
 
-( ) Buddy (X) Chappie ( ) ArgumentError ( ) None of the Above
+( ) Buddy ( ) Chappie (X) ArgumentError ( ) None of the Above
 
 ?:
 
 ```ruby
 class Pet
-
   attr_accessor :name
 
+  def initialize(name)
+    @name = name
+  end
 end
 ```
 
