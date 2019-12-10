@@ -94,7 +94,7 @@ rabbit = Pet.new("Jabby")
 rabbit.name
 ```
 
-`rabbit.name` in this example will output `Jabby`.
+`rabbit.name` in this example will return `"Jabby"`.
 
 (X) True ( ) False
 
@@ -119,7 +119,7 @@ rabbit.name("Chokola")
 
 What will `rabbit.name("Chokola")` in this example return?
 
-( ) Chokola ( ) Jabby (X) ArgumentError ( ) None of the Above
+( ) `"Chokola"` ( ) `"Jabby"` (X) `ArgumentError` ( ) None of the Above
 
 ?:
 
@@ -144,9 +144,9 @@ rabbit = Pet.new("Jabby")
 rabbit.name = "Chokola"
 ```
 
-In the example above, what will `rabbit.name = "Chokola"` return?
+After running the code in the example above, what will `rabbit.name` return?
 
-(X) Chokola ( ) Jabby ( ) ArgumentError ( ) None of the Above
+(X) `"Chokola"` ( ) `"Jabby"` ( ) `ArgumentError` ( ) None of the Above
 
 ?: A macro in Ruby is code that, in effect, writes more Ruby code.
 
@@ -162,6 +162,10 @@ In the example above, what will `rabbit.name = "Chokola"` return?
 class Pet
   attr_reader :name
   attr_writer :name
+  
+  def initialize(name)
+    @name = name
+  end
 end
 ```
 
@@ -172,7 +176,7 @@ buddy.name = "Chappie"
 
 Considering the code above, what will `buddy.name` output?
 
-( ) Buddy ( ) Chappie (X) ArgumentError ( ) None of the Above
+( ) `"Buddy"` (X) `"Chappie"` ( ) `ArgumentError` ( ) None of the Above
 
 ?:
 
@@ -192,6 +196,6 @@ buddy = Pet.new("Buddy")
 
 What will `buddy.name` in this example output?
 
-(X) Buddy ( ) Chappie ( ) ArgumentError ( ) None of the Above
+(X) `"Buddy"` ( ) `"Chappie"` ( ) `ArgumentError` ( ) None of the Above
 
 ???
